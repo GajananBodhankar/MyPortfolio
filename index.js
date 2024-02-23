@@ -42,3 +42,15 @@ async function changeIcon() {
     }
   }, 300);
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  let body = document.querySelector("body");
+  let footer = document.querySelector("footer");
+  if (body.scrollHeight < window.innerHeight) {
+    footer.classList.add("footerFixed");
+  } else {
+    footer.classList.remove("footer-fixed");
+  }
+});
+
+document.addEventListener("scroll", () => {});

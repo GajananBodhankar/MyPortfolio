@@ -111,14 +111,39 @@ body {
   margin: auto;
   position: relative;
 }
-
+media {
+  height: 100%;
+}
 footer {
-  position: fixed;
   bottom: 0px;
   width: 100%;
+  border-top: 1px solid yellow;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   background-color: rgb(42, 40, 40);
+  background: url(./Assets/vector-illustration-maha-shivratri-hindu-festival-celebrated-lord-shiva_695987-1279.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.footerFixed {
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid yellow;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgb(42, 40, 40);
+  background: url(./Assets/vector-illustration-maha-shivratri-hindu-festival-celebrated-lord-shiva_695987-1279.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
 .one {
   animation: im 1s ease-in-out 0ms 1;
@@ -362,5 +387,34 @@ p > a {
   }
   to {
     color: white;
+  }
+}
+
+.mobileDisplay {
+  display: none;
+  font-family: "Courier New", Courier, monospace;
+}
+.desktopDisplay {
+  display: none;
+  font-family: "Courier New", Courier, monospace;
+}
+.desktopDisplay p:nth-child(2) {
+  text-align: center;
+}
+
+@media screen and (min-width: 1020px) {
+  .desktopDisplay {
+    display: block;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .mobileDisplay {
+    display: block;
+  }
+  footer {
+    flex-wrap: wrap;
   }
 }
