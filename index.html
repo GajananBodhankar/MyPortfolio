@@ -14,6 +14,12 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      #partice-js {
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -57,10 +63,13 @@
         </ul>
       </div>
     </nav>
-    <div class="contentDiv">
-      <div class="one">HI THERE, I'M</div>
-      <div class="two">GAJANAN</div>
-      <div class="three">A PASSIONATE FULL-STACK DEVELOPER</div>
+
+    <div class="contentDiv" id="particles-js">
+      <div>
+        <div class="one">HI THERE, I'M</div>
+        <div class="two">GAJANAN</div>
+        <div class="three">A PASSIONATE FULL-STACK DEVELOPER</div>
+      </div>
     </div>
     <footer class="px-5 p-3">
       <div class="imagesDiv">
@@ -92,7 +101,7 @@
         style="align-self: flex-start"
         >RESUME</a
       >
-      <div class="mobileDisplay" >
+      <div class="mobileDisplay">
         <p style="margin: 0">
           No &copy copyright issues. Feel free to copy. If you need any help,
           ping me !
@@ -101,6 +110,8 @@
       </div>
     </footer>
     <script src="./index.js"></script>
+    <script src="./app.js"></script>
+    <script src="./particles.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>

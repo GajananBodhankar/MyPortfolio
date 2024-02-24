@@ -107,8 +107,9 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: fit-content;
-  margin: auto;
+  /* width: fit-content;
+  margin: auto; */
+  width: 100%;
   position: relative;
 }
 media {
@@ -117,7 +118,6 @@ media {
 footer {
   bottom: 0px;
   width: 100%;
-  border-top: 1px solid yellow;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -145,8 +145,13 @@ footer {
   background-size: cover;
   background-position: center;
 }
+.contentDiv > div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .one {
-  animation: im 1s ease-in-out 0ms 1;
+  animation: im 1s ease-in-out 0ms forwards;
   position: relative;
   width: fit-content;
   align-self: center;
@@ -164,7 +169,7 @@ footer {
 }
 .three {
   position: relative;
-  animation: des 2s ease-in-out;
+  animation: des 2s ease-in-out forwards;
   width: 20rem;
   color: rgb(156, 156, 156);
   align-self: flex-end;
@@ -214,7 +219,7 @@ footer > a:not(:hover) {
 @keyframes des {
   from {
     color: rgb(42, 40, 40);
-    right: -20%;
+    right: -100%;
   }
   to {
     right: 0%;
@@ -223,7 +228,7 @@ footer > a:not(:hover) {
 @keyframes im {
   from {
     color: rgb(42, 40, 40);
-    left: -10%;
+    left: -20%;
   }
   to {
     left: 0%;

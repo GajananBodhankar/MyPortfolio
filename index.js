@@ -54,3 +54,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 document.addEventListener("scroll", () => {});
+
+// For particle.js
+
+// let contentDiv=document.querySelector('.contentDiv')
+// document.addEventListener('resize',(e)=>{
+// if(window.innerWidth<1025){}
+// })
