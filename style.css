@@ -107,8 +107,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* width: fit-content;
-  margin: auto; */
+
   width: 100%;
   position: relative;
 }
