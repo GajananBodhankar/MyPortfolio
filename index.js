@@ -22,7 +22,6 @@ img.addEventListener("mouseout", (e) => {
 document
   .querySelector(".navbar-toggler")
   .addEventListener("click", function (e) {
-    // changeIcon();
   });
 
 async function changeIcon() {
