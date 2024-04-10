@@ -60,26 +60,34 @@
     <div class="container" id="contentContainer">
       <header class="mt-5">CONTACT</header>
       <p class="mt-5 text-center">
-        Feel free to contact me over email or phone. Always open to discuss new
-        ideas!
-      </p>
-      <header class="mt-5" style="font-size: x-large">E-mail</header>
-      <p class="text-center mt-3">
-        <a
-          href="mailto:bodhankargajanan99@gmail.com"
-          style="color: #5c9e75; font-weight: 900"
-          >bodhankargajanan99@gmail.com</a
-        >
-      </p>
-      <header class="mt-5" style="font-size: x-large">Phone</header>
-
-      <p class="text-center mt-3">
-        <a href="tel:+91-9766536784" style="color: #5c9e75; font-weight: 900">
-          +91-9766536784
-        </a>
+        Feel free to contact me by dropping a text message over email. Always
+        open to discuss new ideas!
       </p>
     </div>
+    <form action="https://api.web3forms.com/submit" method="POST" class="form">
+      <input
+        type="hidden"
+        name="access_key"
+        value="66b1cf8e-760e-4407-bb08-b13782f20524"
+      />
 
+      <input type="text" name="name" required placeholder="Name" />
+      <input type="email" name="email" required placeholder="Email" />
+      <textarea
+        name="message"
+        required
+        placeholder="Message goes here.."
+        style="
+          resize: none;
+          border-radius: 4px;
+          padding: 10px;
+          background: transparent;
+          color: white;
+          width: 100%;
+        "
+      ></textarea>
+      <button type="submit" class="submit">Submit</button>
+    </form>
     <footer class="px-5 p-3">
       <div class="imagesDiv">
         <a href="https://github.com/GajananBodhankar" target="_blank">
