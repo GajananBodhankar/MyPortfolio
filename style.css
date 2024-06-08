@@ -359,7 +359,7 @@ p > a {
 
 @media screen and (min-width: 992px) {
   #contentContainer {
-    width: 50%;
+    /* width: 50%; */
   }
 }
 .projectTitle:hover {
@@ -458,4 +458,8 @@ input:focus {
   .form {
     width: calc(100vw - 30%);
   }
+}
+
+.projectsContainer{
+  width: max-content;
 }
