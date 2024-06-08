@@ -315,6 +315,9 @@ footer > a:not(:hover) {
  .projectSkillMaincontainer{
   flex-direction: column;
  }
+  #contentContainer {
+    width: 100%;
+}
 }
 .navbar-toggler {
   border-color: rgb(42, 40, 40) !important;
@@ -360,11 +363,7 @@ p > a {
   animation: onloadhref 3s ease-in-out;
 }
 
-@media screen and (min-width: 992px) {
-  #contentContainer {
-    /* width: 50%; */
-  }
-}
+
 .projectTitle:hover {
   text-decoration: none;
   color: red;
