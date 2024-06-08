@@ -312,12 +312,16 @@ footer > a:not(:hover) {
     background-color: var(--textColorThree);
     transition: transform 0.25s linear;
   }
- .projectSkillMaincontainer{
-  flex-direction: column;
- }
+  .projectSkillMaincontainer {
+    flex-direction: column;
+  }
   #contentContainer {
     width: 100%;
-}
+    margin-bottom: 0px !important;
+  }
+  .skills {
+    margin: 0 !important;
+  }
 }
 .navbar-toggler {
   border-color: rgb(42, 40, 40) !important;
@@ -362,7 +366,6 @@ p > a:hover {
 p > a {
   animation: onloadhref 3s ease-in-out;
 }
-
 
 .projectTitle:hover {
   text-decoration: none;
