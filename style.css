@@ -312,6 +312,9 @@ footer > a:not(:hover) {
     background-color: var(--textColorThree);
     transition: transform 0.25s linear;
   }
+ .projectSkillMaincontainer{
+  flex-direction: column;
+ }
 }
 .navbar-toggler {
   border-color: rgb(42, 40, 40) !important;
@@ -459,7 +462,9 @@ input:focus {
     width: calc(100vw - 30%);
   }
 }
-
-.projectsContainer{
+::-webkit-scrollbar {
+  display: none;
+}
+.projectsContainer {
   width: max-content;
 }
