@@ -457,7 +457,17 @@ input:focus {
 .submit:hover {
   border: 1px solid white;
 }
-
+.logos:hover {
+  cursor: pointer;
+  transition: transform 0.7s;
+  transform: scale(1.3);
+}
+.logos:not(:hover){
+  transition: transform 0.7s;
+  transform: scale(1);
+}
+.logos {
+}
 @media screen and (max-width: 768px) {
   .form {
     width: calc(100vw - 30%);
