@@ -166,7 +166,6 @@ footer {
 .three {
   position: relative;
   animation: des 2s ease-in-out forwards;
-  width: 20rem;
   color: rgb(156, 156, 156);
   align-self: flex-end;
   text-align: end;
