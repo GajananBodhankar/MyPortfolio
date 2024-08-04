@@ -479,3 +479,19 @@ input:focus {
 .projectsContainer {
   width: max-content;
 }
+.flexWrapCustom{
+  
+  
+}
+
+@media screen and (min-width: 992px) {
+  .flexWrapCustom{
+    width: 30vw !important;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 300px) {
+  .flexWrapCustom{
+    flex-wrap: wrap;
+  }
+}
