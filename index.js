@@ -21,8 +21,7 @@ img.addEventListener("mouseout", (e) => {
 
 document
   .querySelector(".navbar-toggler")
-  .addEventListener("click", function (e) {
-  });
+  .addEventListener("click", function (e) {});
 
 async function changeIcon() {
   setTimeout(() => {
@@ -45,10 +44,13 @@ async function changeIcon() {
 document.addEventListener("DOMContentLoaded", (event) => {
   let body = document.querySelector("body");
   let footer = document.querySelector("footer");
-  if (body.scrollHeight < window.innerHeight) {
+  console.log(body.scrollHeight, window.innerHeight,body.clientHeight)
+  if (body.clientWidth < 768) {
+    footer.classList.remove('footerFixed')
+  } else if (body.scrollHeight < window.innerHeight) {
     footer.classList.add("footerFixed");
   } else {
-    footer.classList.remove("footer-fixed");
+    footer.classList.remove("footerFixed");
   }
 });
 
