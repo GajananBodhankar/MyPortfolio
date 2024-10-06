@@ -135,12 +135,12 @@ footer {
   position: fixed;
   justify-content: space-between;
   align-items: flex-start;
-  background: url(./Assets/vector-illustration-maha-shivratri-hindu-festival-celebrated-lord-shiva_695987-1279.jpg);
+  /* background: url(./Assets/vector-illustration-maha-shivratri-hindu-festival-celebrated-lord-shiva_695987-1279.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 .contentDiv > div {
   position: absolute;
