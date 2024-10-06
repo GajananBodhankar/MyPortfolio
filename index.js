@@ -44,7 +44,7 @@ async function changeIcon() {
 document.addEventListener("DOMContentLoaded", (event) => {
   let body = document.querySelector("body");
   let footer = document.querySelector("footer");
-  console.log(body.scrollHeight, window.innerHeight,body.clientHeight)
+  // console.log(body.scrollHeight, window.innerHeight,body.clientHeight)
   if (body.clientWidth < 768) {
     footer.classList.remove('footerFixed')
   } else if (body.scrollHeight < window.innerHeight) {
@@ -53,5 +53,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     footer.classList.remove("footerFixed");
   }
 });
+let b = document.body;
+// b.addEventListener("scroll", () => console.log("scrolling"))
 
-document.addEventListener("scroll", () => {});
+// document.body.onscroll = function () {
+//   console.log("Scroll")
+// }
+// document.addEventListener("scroll", () => {console.log("object")});
